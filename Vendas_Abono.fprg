@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-23 07:34:00 p. m."/>
+        <attribute name="created" value="VXNlcjtDT1JERVJPLVBDOzIwMjAtMTItMjM7MDc6MjQ6NTggcC4gbS47MjYwMw=="/>
+        <attribute name="edited" value="VXNlcjtDT1JERVJPLVBDOzIwMjAtMTItMjM7MDc6MzQ6MDAgcC4gbS47MTsyNjk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="VJan, VFeb, VMar, VAbr, Media, Abono" type="Real" array="False" size=""/>
+            <input variable="VJan"/>
+            <input variable="VFeb"/>
+            <input variable="VMar"/>
+            <input variable="VAbr"/>
+            <assign variable="Media" expression="(VJan+VFeb+VMar+VAbr)/4"/>
+            <output expression="Media" newline="True"/>
+            <if expression="Media&gt;=5000">
+                <then>
+                    <assign variable="Abono" expression="0.1*Media"/>
+                </then>
+                <else>
+                    <assign variable="Abono" expression="0.03*Media"/>
+                </else>
+            </if>
+            <output expression="Abono/Media" newline="True"/>
+            <output expression="Abono" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

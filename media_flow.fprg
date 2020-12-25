@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-23 07:54:58 p. m."/>
+        <attribute name="created" value="VXNlcjtDT1JERVJPLVBDOzIwMjAtMTItMjM7MDY6MDA6NDYgcC4gbS47MjU5Mw=="/>
+        <attribute name="edited" value="VXNlcjtDT1JERVJPLVBDOzIwMjAtMTItMjM7MDc6NTQ6NTggcC4gbS47MjsyNzE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media, total" type="Real" array="False" size=""/>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <output expression="&quot;Digite seu nome:&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite seu sobrenome:&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Forne&#231;a suas 4 notas:&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <assign variable="total" expression="media*4"/>
+            <output expression="&quot;Aluno: &quot; &amp; nome &amp; &quot; &quot; &amp; sobrenome &amp; &quot; ,sua media &#233;: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
